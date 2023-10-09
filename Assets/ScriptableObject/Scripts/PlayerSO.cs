@@ -6,6 +6,6 @@ using UnityEngine;
 
 public class PlayerSO : ScriptableObject
 {
-    [field: SerializeField] public PlayerGroundData GroundData { get; private set; }
+    [field: SerializeField] public PlayerGroundData GroundedData { get; private set; }
     [field: SerializeField] public PlayerAirData AirData { get; private set; }
 }

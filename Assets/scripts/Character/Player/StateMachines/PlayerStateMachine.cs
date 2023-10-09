@@ -23,11 +23,11 @@ public class PlayerStateMachine : StateMachine
     {
         this.Player = player;
 
-       // IdleState = new PlayerIdleState(this);
+        IdleState = new PlayerIdleState(this);
 
         MainCameraTransform = Camera.main.transform;
 
-        //MovementSpeed = player.Data.GroundedData.BaseSpeed;
-//RotationDamping = player.Data.GroundedData.BaseRotationDamping;
+        MovementSpeed = player.Data.GroundedData.BaseSpeed;
+        RotationDamping = player.Data.GroundedData.BaseRotationDamping;
     }
 }
